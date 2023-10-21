@@ -18,7 +18,7 @@ public:
         // Sort both strings
         sort(s.begin(), s.end());
         sort(t.begin(), t.end());
-        // Compare them
+        // Compare the strings
         return s == t;
     }
 };
