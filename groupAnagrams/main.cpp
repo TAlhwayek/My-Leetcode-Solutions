@@ -1,6 +1,9 @@
 //
 // Created by Tony Alhwayek on 10/21/2023.
 //
+#include <algorithm>
+#include <string>
+#include <unordered_map>
 
 using namespace std;
 
@@ -19,12 +22,13 @@ public:
             map[sortedString].push_back(s);
         }
 
+        // Create 2D vector to store vectors pulled from map
         vector<vector<string>> result;
         for(auto m : map) {
             // Extract each vector from the map
             result.push_back(m.second);
         }
-
+        // Return required 2D vector
         return result;
     }
 };
