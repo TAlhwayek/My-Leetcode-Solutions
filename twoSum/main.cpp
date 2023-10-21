@@ -7,7 +7,11 @@
 
 using namespace std;
 
-// Runtime: O(n)
+// Runtime:
+// For loop = O(n)
+// If = O(1)
+// map.count = O(1)
+// Total = O(n)
 
  class Solution {
  public:
@@ -20,7 +24,7 @@ using namespace std;
 
              // Check if the needed number exist in the map
              if(map.count(value)) {
-                 // If so, return the required indicies
+                 // If so, return the required indices
                  return {i, map[value]};
              }
              // Else, add nums[i] and its index to the map
